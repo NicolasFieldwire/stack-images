@@ -5,7 +5,7 @@ set -e
 set -x
 
 apt-get update
-apt-get install -y --force-yes \
+apt-get install -y --force-yes --no-install-recommends \
     autoconf \
     bison \
     build-essential \

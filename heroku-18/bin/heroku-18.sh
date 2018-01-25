@@ -83,7 +83,7 @@ PGDG_ACCC4CF8
 
 apt-get update
 apt-get upgrade -y --force-yes
-apt-get install -y --force-yes \
+apt-get install -y --force-yes --no-install-recommends \
     apt-utils \
     bind9-host \
     bzip2 \
@@ -91,10 +91,12 @@ apt-get install -y --force-yes \
     curl \
     dnsutils \
     ed \
+    file \
     git \
     imagemagick \
     iputils-tracepath \
     language-pack-en \
+    less \
     libcurl3 \
     libev4 \
     libevent-2.1-6 \
@@ -113,21 +115,25 @@ apt-get install -y --force-yes \
     librabbitmq4 \
     libuv1 \
     libxslt1.1 \
+    lsb-release \
     locales \
     make \
     netcat-openbsd \
     openssh-client \
     openssh-server \
     postgresql-client-10 \
+    patch \
     python \
     rsync \
     ruby \
+    shared-mime-info \
     socat \
     stunnel \
     syslinux \
     tar \
     telnet \
     tzdata \
+    unzip \
     wget \
     zip \
 
