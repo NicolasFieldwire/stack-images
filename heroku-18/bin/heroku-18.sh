@@ -132,10 +132,10 @@ apt-get install -y --force-yes \
     zip \
 
 # install the JDK for certificates, then remove it
-apt-get install -y --no-install-recommends ca-certificates-java openjdk-8-jre-headless
+apt-get install -y --no-install-recommends ca-certificates-java openjdk-9-jre-headless
 apt-get remove -y ca-certificates-java
 apt-get -y --purge autoremove
-apt-get purge -y openjdk-8-jre-headless
+apt-get purge -y openjdk-9-jre-headless
 stat /etc/ssl/certs/java/cacerts
 
 cd /
